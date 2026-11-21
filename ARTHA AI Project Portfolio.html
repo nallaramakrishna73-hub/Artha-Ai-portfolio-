@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>ARTHA AI: AI research for Indian stocks</title>
+<style>
+:root{--bg:#f3f5f9;--surf:#fff;--ink:#14213d;--mut:#55627a;--line:#d6dce8;--acc:#d9620f;--grn:#157347;--blu:#2563a8;--hero:#14213d;--herot:#f3f5f9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--surf:#16223a;--ink:#e8edf6;--mut:#9aa8c2;--line:#2a3a5a;--acc:#f08a3e;--grn:#4cc38a;--blu:#6aa5e8;--hero:#16223a;--herot:#e8edf6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1626;--surf:#16223a;--ink:#e8edf6;--mut:#9aa8c2;--line:#2a3a5a;--acc:#f08a3e;--grn:#4cc38a;--blu:#6aa5e8;--hero:#16223a;--herot:#e8edf6;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:28px 20px 64px}
+h1{font:700 clamp(44px,11vw,84px)/1 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:8px 0 14px}
+h2{font:700 26px/1.2 Georgia,"Times New Roman",serif;margin:48px 0 12px}
+p{margin:0 0 12px;max-width:68ch}.lead{font-size:19px;color:var(--mut);max-width:60ch}
+.hero{background:var(--hero);color:var(--herot);border-radius:14px;padding:24px 20px 18px;margin-top:20px}
+.hero p{color:inherit;opacity:.8;font-size:13px;margin:8px 0 0}svg{width:100%;height:auto;display:block}
+.ax{stroke:currentColor;opacity:.35}.fr{fill:none;stroke:var(--acc);stroke-width:3}.lb{fill:currentColor;font:12px "Segoe UI",system-ui,sans-serif}
+.cur{fill:var(--blu)}.mn{fill:var(--grn)}.ms{fill:var(--acc);stroke:#fff;stroke-width:1.5}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:22px 0 0;padding:0;list-style:none}.facts b{font:700 28px Georgia,serif;display:block;line-height:1.1}.facts span{font-size:13px;color:var(--mut)}
+dl{margin:0;border-top:1px solid var(--line)}dl div{display:grid;grid-template-columns:150px 1fr;gap:6px 18px;padding:12px 0;border-bottom:1px solid var(--line)}dt{font-weight:700}dd{margin:0;color:var(--mut)}
+@media(max-width:560px){dl div{grid-template-columns:1fr}}
+ul{padding-left:20px;margin:0 0 12px}li{margin:6px 0;max-width:68ch}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:480px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--surf)}
+.note{border-left:4px solid var(--acc);background:var(--surf);padding:12px 16px;border-radius:0 8px 8px 0;margin-top:28px}
+footer{margin-top:40px;color:var(--mut);font-size:13px}
+</style></head><body><main>
+<h1>ARTHA AI</h1>
+<p class="lead">An AI research platform for Indian stocks on NSE and BSE. It runs an agent workflow, scores each stock, writes a 13-section dossier, and optimizes portfolios with real mean-variance math.</p>
+<div class="hero"><svg viewBox="0 0 600 240" role="img" aria-label="Efficient frontier chart with current and optimized portfolios"><line x1="50" y1="210" x2="570" y2="210" class="ax"/><line x1="50" y1="30" x2="50" y2="210" class="ax"/><polyline points="107.8,188.2 107.8,188.2 107.8,188.2 107.8,182.7 107.8,182.7 107.8,182.7 107.8,182.7 107.8,177.3 107.8,177.3 107.8,177.3 127.0,171.8 127.0,166.4 127.0,160.9 127.0,155.5 146.3,150.0 165.6,133.6 204.1,117.3 242.6,100.9 300.4,84.5 358.1,68.2 377.4,62.7 415.9,57.3 435.2,57.3 435.2,57.3 435.2,57.3 435.2,57.3 454.4,57.3 473.7,51.8 493.0,51.8 512.2,51.8" class="fr"/><circle cx="165.6" cy="166.4" r="5.5" class="cur"/><text x="175.6" y="182.4" text-anchor="start" class="lb">Current 15.2% risk, 24.6% return</text><circle cx="107.8" cy="188.2" r="5.5" class="mn"/><text x="97.8" y="180.2" text-anchor="end" class="lb">Min risk</text><circle cx="242.6" cy="100.9" r="5.5" class="ms"/><text x="232.6" y="91.9" text-anchor="end" class="lb">Max Sharpe 1.24</text><text x="310" y="234" text-anchor="middle" class="lb">Risk (annual volatility, %)</text><text x="14" y="120" transform="rotate(-90 14 120)" text-anchor="middle" class="lb">Return (%)</text></svg><p>Efficient frontier computed by the app’s optimizer for its 5 built-in holdings on sample data. Illustrative only, not a forecast.</p></div>
+<ul class="facts"><li><b>13</b><span>section research dossier</span></li><li><b>5</b><span>weighted scoring pillars</span></li><li><b>3</b><span>portfolio optimizer modes</span></li><li><b>18</b><span>unit tests</span></li></ul>
+<h2>The problem</h2>
+<p>Retail investors in India piece together prices, ratios, news and macro data from many sites, and generic chatbots can invent numbers. Free market APIs also fail often, and buy or sell calls are regulated by SEBI.</p>
+<h2>What it does</h2>
+<dl>
+<div><dt>Agent workflow</dt><dd>A LangGraph workflow plans the task, fetches market, fundamental, news and macro data, runs analytics, scores the stock, then applies validation and compliance steps.</dd></div>
+<div><dt>Research dossier</dt><dd>Thirteen sections plus a disclaimer, with a streamed agent timeline and PDF export.</dd></div>
+<div><dt>Scoring</dt><dd>Technical 25%, Fundamental 25%, Risk 20%, Sentiment 15% and Macro 15%, combined into a score from 0 to 100.</dd></div>
+<div><dt>Risk and technicals</dt><dd>RSI, MACD, moving averages, Bollinger Bands, beta against NIFTY, VaR, CVaR and max drawdown.</dd></div>
+<div><dt>Portfolio and MPT</dt><dd>Long-only mean-variance optimizer with Ledoit-Wolf covariance, a computed efficient frontier, Min Risk, Max Sharpe and Balanced modes, and beta-based what-if shocks.</dd></div>
+<div><dt>Calculators</dt><dd>Black-Scholes-Merton options with Greeks, futures fair value, bond price, duration and yield.</dd></div>
+<div><dt>Alerts and monitoring</dt><dd>Rule-based alerts, provider health, circuit breaker state and Prometheus-style metrics.</dd></div>
+</dl>
+<h2>The portfolio optimizer</h2>
+<ul><li>Expected returns come from live price history and are shrunk halfway toward the cross-stock average, because short windows are noisy.</li>
+<li>The covariance matrix uses Ledoit-Wolf shrinkage, and a 30% per-stock cap keeps the portfolio diversified.</li>
+<li>Max Sharpe is found by sweeping risk aversion along the frontier.</li>
+<li>Tests check a closed-form two-asset case and confirm the result beats 3,000 random portfolios.</li>
+<li>The portfolio tab is live-data only. If prices or history are missing, it says so instead of showing sample numbers.</li></ul>
+<h2>Built with</h2>
+<dl>
+<div><dt>Frontend</dt><dd>React 19, Vite, Tailwind, lightweight-charts, Recharts, jsPDF</dd></div>
+<div><dt>Backend</dt><dd>Node, Express, TypeScript, LangGraph, SSE and WebSocket streaming</dd></div>
+<div><dt>Data</dt><dd>Yahoo Finance and Alpha Vantage behind a router with cache, retries and circuit breakers; SQLite through Drizzle</dd></div>
+<div><dt>Security</dt><dd>JWT in httpOnly cookies, bcrypt, helmet, rate limiting, input validation</dd></div>
+<div><dt>Delivery</dt><dd>Docker Compose, GitHub Actions CI, Vitest</dd></div>
+</dl>
+<h2>Engineering notes</h2>
+<ul><li>Testing against known answers showed that an early placeholder optimizer was not real mean-variance, so it was replaced.</li>
+<li>I found and fixed a sign bug that pulled sample prices down about 70%, and a precedence bug that made sample highs and lows about 1/100 of price.</li>
+<li>Report wording avoids buy or sell calls and target prices, and a disclaimer appears on every view and PDF.</li></ul>
+<h2>Limits and next steps</h2>
+<div class="tw"><table><tr><th>Today</th><th>Next</th></tr>
+<tr><td>Dossier text is built from templates over computed values.</td><td>LLM narrative checked against computed figures.</td></tr>
+<tr><td>The number validator is a placeholder step.</td><td>Evidence matching that rejects unsupported numbers.</td></tr>
+<tr><td>Fundamentals are modelled estimates; macro values are constants.</td><td>Licensed fundamentals and live RBI data.</td></tr>
+<tr><td>Portfolio positions are example holdings.</td><td>Editable, saved user holdings.</td></tr>
+<tr><td>Optimizer uses historical estimates only.</td><td>Out-of-sample backtests and cost constraints.</td></tr></table></div>
+<p class="note">ARTHA AI is an educational project. It provides analysis for information only and is not investment advice. Consult a SEBI-registered advisor before investing.</p>
+<footer>Financial Research AI Agent project, Track B (Advanced).</footer>
+</main></body></html>
